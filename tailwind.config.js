@@ -5,12 +5,39 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    
+
   ],
-  plugins:[
+  plugins: [
   ],
   theme: {
     extend: {
+      keyframes: {
+        'fade-in-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(30px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
+        'slide-right': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-70px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)'
+          },
+        },
+        
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 1.0s ease-out',
+        'slide-right': 'slide-right 1.0s ease-out'
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

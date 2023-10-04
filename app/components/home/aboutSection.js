@@ -3,14 +3,16 @@ import React from 'react'
 
 export const AboutSection = () => {
     return (
-        <div className=' px-48 pb-24 w-full flex items-start'>
+        <div className=' px-4 pb-24 w-full flex items-start animate-slide-right '>
             <div className=' gap-4 flex flex-col'>
-                <h1 className='text-letters font-extrabold md:text-5xl text-2xl mb-5'>
-                    Somos una empresa <br/> dedicada al servicio al cliente
+                <h1 className='text-letters font-extrabold md:text-5xl text-2xl mb-5 ab'>
+                    Innovando hoy para un mañana más eficiente.
                 </h1>
-                <p className='text-gray-600'>
-                    Nos dedicamos a la comercialización, fabricación, importación,<br/>
-                    exportación, servicio de postventa de prestigiosas marcas y productos.
+                <p className='text-gray-600 w-3/4'>
+                    Nos especializamos en ofrecer una solución completa que 
+                    abarca desde la creación y diseño de sitios web hasta la 
+                    implementación, mantenimiento y servicios de prestigiosas 
+                    marcas y sus productos en línea.
                 </p>
                 <div className='w-full md:w-auto'>
                     <Link href="/pages/about" class="text-letters font-bold bg-transparent hover:underline text-m px-5 py-2.5 text-center inline-flex items-center focus:ring-transparent w  mr-2 ">

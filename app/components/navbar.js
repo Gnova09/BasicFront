@@ -6,7 +6,7 @@ export const Navbar = () => {
 
     const links = [
         {
-            label: "Home",
+            label: "Inicio",
             route: "/"
         },
         {
@@ -16,10 +16,6 @@ export const Navbar = () => {
         {
             label: "Sobre nosotros",
             route: "/pages/about"
-        },
-        {
-            label: "Tienda",
-            route: "/pages/tienda"
         },
         {
             label: "Contacto",
@@ -32,7 +28,7 @@ export const Navbar = () => {
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" class="flex items-center">
                     <img src={'../favicon.ico'} class="h-8 mr-3" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-letters">Flowbite</span>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-letters">EikonNova</span>
                 </Link>
 
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
