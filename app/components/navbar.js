@@ -35,9 +35,9 @@ export const Navbar = () => {
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
                         {
-                            links.map(({ label, route }) => {
+                            links.map(({ label, route },i) => {
                                 return (
-                                    <li className='self-center'>
+                                    <li className='self-center' key={i}>
                                         <Link href={route} class="block py-2 pl-3 pr-4 text-letters rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                                             {label}
                                         </Link>
