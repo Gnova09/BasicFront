@@ -19,7 +19,7 @@ export default function Home() {
         <div>
           <AboutSection />
         </div>
-        <Image className="w-1/2 animate-fade-in-up" src={require("./assets/img/landing.jpg")} width={"810"} height="540" />
+        <Image alt="image" className="w-1/2 animate-fade-in-up" src={require("./assets/img/landing.jpg")} width={"810"} height="540" />
       </div>
       <DivisorSection />
       <ServiciosSection />

@@ -37,8 +37,8 @@ export const ValoresSection = () => {
             </h1>
             <div className=' grid grid-cols-2 grid-rows-2 gap-3 items-center justify-center w-3/4 max-w-fit'>
 
-                {valores.map(({ logo, valor, descripcion }) => {
-                    return <div className='flex flex-col items-center '>
+                {valores.map(({ logo, valor, descripcion },i) => {
+                    return <div className='flex flex-col items-center 'key={i}>
                         <div className='text-white bg-blue-600 rounded-full w-min p-3'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill='currentColor' x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
                                 <path d={logo}></path>

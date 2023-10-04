@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Footer = () => {
 
@@ -9,7 +10,7 @@ export const Footer = () => {
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <Link href="/" class="flex items-center">
-                            <img src={'../favicon.ico'} class="h-8 mr-3" alt="FlowBite Logo" />
+                            <Image width={"32"} height={"32"} src={require('../favicon.ico')} class="h-8 mr-3" alt="FlowBite Logo" />
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                         </Link>
                         <ul class=" flex gap-3 flex-col mt-5 text-gray-600 dark:text-gray-400 font-medium">

@@ -43,9 +43,9 @@ export const ServiciosSection = () => {
             {/* seccion de card servicios */}
             <div className='flex flex-row gap-5  justify-center'>
 
-                {ProductosInfo.map(({ titulo, descripcion, ima }) => {
+                {ProductosInfo.map(({ titulo, descripcion, ima },i) => {
                     return (
-                        <div class=" w-1/3   bg-white border border-gray-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div key={i} class=" w-1/3  bg-white border border-gray-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#" className='h-1/3 '>
                                 <Image class="rounded-t-lg w-full h-1/3" src={ima} alt="" width="500" height="500"/>
                             </a>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 export const Navbar = () => {
@@ -27,7 +28,7 @@ export const Navbar = () => {
         <nav class="bg-primary  text-letters fixed w-full z-20 top-0 left-0 border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" class="flex items-center">
-                    <img src={'../favicon.ico'} class="h-8 mr-3" alt="Flowbite Logo" />
+                    <Image width={"32"} height={"32"} src={require('../favicon.ico')} class="h-8 mr-3" alt="Flowbite Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap text-letters">EikonNova</span>
                 </Link>
 

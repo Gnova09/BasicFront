@@ -50,8 +50,8 @@ export const Productos = () => {
     return (
         <div className='flex flex-col gap-10 p-10'>
             {
-                ProductosInfo.map(({ titulo, descripcion, ima, link }) => {
-                  return  <div className='flex-row flex gap-2'>
+                ProductosInfo.map(({ titulo, descripcion, ima, link },i) => {
+                  return  <div className='flex-row flex gap-2' key={i}>
                         <div className='flex flex-col justify-center mr-5 ml-5 gap-10 w-2/4 '>
                             <div>
                                 <h1 className='text-letters font-extrabold text-xl mb-5'>{titulo}</h1>

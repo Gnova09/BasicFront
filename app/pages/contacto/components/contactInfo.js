@@ -21,9 +21,9 @@ export const ContactInfo = () => {
 
     return (
         <div className="flex flex-row w-full gap-6 relative -top-8 " >
-            {contactoInfo.map(({logo, head, p}) => {
+            {contactoInfo.map(({logo, head, p},i) => {
                 return (
-                    <div class="flex flex-col rounded-md justify-center hover:w-96 hover:h-64  items-center bg-secondary text-gray-600 md:h-60 md:w-80 p-4"> {/* Esta no se pone el bg*/}
+                    <div key={i} class="flex flex-col rounded-md justify-center hover:w-96 hover:h-64  items-center bg-secondary text-gray-600 md:h-60 md:w-80 p-4"> {/* Esta no se pone el bg*/}
                         <svg xmlns="http://www.w3.org/2000/svg" className='text-white hover:w-12 w-10 h-10 mb-4' viewBox="0 0 50 50" fill='currentColor'>
                             <path d={logo}>
                             </path>
