@@ -10,10 +10,10 @@ export const Navbar = () => {
             label: "Inicio",
             route: "/"
         },
-        {
+       /*  {
             label: "Productos",
             route: "/pages/productos"
-        },
+        }, */
         {
             label: "Sobre nosotros",
             route: "/pages/about"
